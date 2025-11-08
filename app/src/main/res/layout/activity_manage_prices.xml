@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ✅ Top Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Manage Prices"
+        android:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
+
+    <!-- ✅ Heading -->
+    <TextView
+        android:text="💰 Manage Milk Prices"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ✅ Current Price Display -->
+    <TextView
+        android:id="@+id/tvCurrentRates"
+        android:text="Loading current rates..."
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ✅ Price Entry (Only Price per Litre as per your new rule) -->
+    <EditText
+        android:id="@+id/etPricePerLitre"
+        android:hint="Enter Price per Litre (₹)"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- ❌ Removed Fat % EditText (as per your latest requirement) -->
+
+    <!-- ✅ Save Button -->
+    <Button
+        android:id="@+id/btnSaveRates"
+        android:text="Save Prices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

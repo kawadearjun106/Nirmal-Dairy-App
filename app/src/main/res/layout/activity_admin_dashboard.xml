@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- ✅ Top Toolbar with Logout Menu -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Admin Dashboard"
+        android:titleTextColor="@android:color/white"
+        app:menu="@menu/menu_admin_dashboard" />
+
+    <!-- ✅ Main Content Scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/cardAddMilk"
+                style="@style/AdminCard">
+                <TextView
+                    android:text="➕ Add Milk Entry"
+                    style="@style/AdminCardText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardViewEntries"
+                style="@style/AdminCard">
+                <TextView
+                    android:text="📋 View Milk Entries"
+                    style="@style/AdminCardText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardDailyReport"
+                style="@style/AdminCard">
+                <TextView
+                    android:text="📆 Daily Report"
+                    style="@style/AdminCardText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardManageFarmers"
+                style="@style/AdminCard">
+                <TextView
+                    android:text="👨‍🌾 Manage Farmers"
+                    style="@style/AdminCardText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardManageProducts"
+                style="@style/AdminCard">
+                <TextView
+                    android:text="🛒 Manage Products"
+                    style="@style/AdminCardText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardManagePrices"
+                style="@style/AdminCard">
+                <TextView
+                    android:text="💰 Manage Prices"
+                    style="@style/AdminCardText" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

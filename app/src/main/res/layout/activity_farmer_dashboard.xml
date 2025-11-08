@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Top toolbar with menu -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Farmer Dashboard"
+        android:titleTextColor="@android:color/white"
+        app:menu="@menu/menu_farmer_dashboard" />
+
+    <!-- Main content below toolbar -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnViewBills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View My Bills"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnViewProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Products"
+                android:layout_marginBottom="12dp" />
+
+            <!-- optional: keep the old logout button (you can remove it later) -->
+                </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

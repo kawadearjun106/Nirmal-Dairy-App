@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "174514008343",
+    "project_id": "nirmal-app1",
+    "storage_bucket": "nirmal-app1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174514008343:android:b3eb2072ccf722f0014752",
+        "android_client_info": {
+          "package_name": "com.nirmal.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPDbweCp72jDXtgDmP-kz10jijGj42JOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174514008343:android:4b63160f60880bc8014752",
+        "android_client_info": {
+          "package_name": "com.nirmaldairy.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPDbweCp72jDXtgDmP-kz10jijGj42JOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
